@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3fdfd;
+}
+/*Profile Design*/
+.profile-main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.profile {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  position: relative;
+}
+.profile h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+}
+.button {
+  width: 8em;
+  height: 3em;
+  border-radius: 1em;
+  background-color: #a6e3e9;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  border-style: none;
+  position: absolute;
+  bottom: 15%;
+  right: 45%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.button:hover {
+  color: #191717;
+  background-color: #191717;
+  color: #ccc8aa;
+}
+
+/*Images size*/
+.profile-image {
+  width: 25em;
+  border-radius: 67% 33% 32% 68% / 32% 33% 67% 68%;
+}
+
+/*divider bottom*/
+.custom-shape-divider-bottom-1694940602 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1694940602 svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-bottom-1694940602 .shape-fill {
+  fill: #71c9ce;
+}
+
+/*divider top*/
+.custom-shape-divider-top-1694941270 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1694941270 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 192px;
+}
+
+.custom-shape-divider-top-1694941270 .shape-fill {
+  fill: #71c9ce;
+}
+
+/* for tablet*/
+@media (max-width: 768px) {
+  .profile-image {
+    width: 18em;
+  }
+}
+@media (max-width: 512px) {
+  .profile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile h1,
+  .profile p {
+    text-align: center;
+  }
+  .profile h1 {
+    font-size: 2rem;
+  }
+  .button {
+    left: 30%;
+    bottom: 10%;
+  }
+}
