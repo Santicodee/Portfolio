@@ -102,7 +102,7 @@ body {
 /* for tablet*/
 @media (max-width: 768px) {
   .profile-image {
-    width: 18em;
+    width: 17.5em;
   }
 }
 @media (max-width: 512px) {
